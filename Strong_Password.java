@@ -7,7 +7,16 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 
 public Strong_Password {
-
+/*
+Algorithm:
+1.We create seperate String representing number,lowerCase,upperCase & Special Character.
+2.Then create boolean value for above String to check it is already checked or not && create count=4(number of condition to check).
+3.For each character in password we check that character present in the created String or not.
+4.If Yes we decrement count and make boolean value as false.
+5.Finally we check the length of the given String>Specified number.
+6.If Yes we simply return count.
+7.Else  we check greater value between count & (specified number - count) and return greater value.
+*/
     // Complete the minimumNumber function below.
     static int minimumNumber(int n, String password) {
         String num="0123456789";
