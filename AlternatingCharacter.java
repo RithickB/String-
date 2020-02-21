@@ -10,7 +10,7 @@ public class Solution {
 /*
 1.Here we need to count number of adjacent Character except first character
 2.So we use Stack which increase count when Stack peek == upcoming Character
-3.return Stack size.
+3.return count.
 */
     // Complete the alternatingCharacters function below.
     static int alternatingCharacters(String s) {
