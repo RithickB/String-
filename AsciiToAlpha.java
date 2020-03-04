@@ -16,9 +16,12 @@ public class  AsciiToAlpha{
         int num=0;
         String result="";
         for(int i=0;i<s.length();i++){
+            // Append the current digit 
             num=(num*10)+Character.getNumericValue(s.charAt(i));
             if(num>=32&&num<=122){
+                //Append the character to result String
                 result+=(char)num;
+                //Reset to 0 once we get our specified character
                 num=0;
             }
         }
